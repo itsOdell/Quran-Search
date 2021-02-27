@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 0;
+    z-index: 2;
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+.search-container{
+    position: relative;
+    animation-name: float;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+#search-input{
+    width: 260px;
+    height: 20px;
+    border: 1px solid black;
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+#search-button{
+    height: 25px;
+    width: 40px;
+    margin-left: -5.5px;
+}
+@keyframes float{
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 10px); } 
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#showcase{
+    width: 100%;
+    height: 70vh;
+    padding-top: 76px;
+    position: relative;
+}
+.showcase-container{
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 0;
+}
+.showcase-text-container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+.showcase-title{
+    margin-top: 20px;
+}
+#card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    border: 1px solid black;
+    padding: 2rem 1rem;
+}
+#arabic{
+    text-align: right;
+}
+#meta{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
